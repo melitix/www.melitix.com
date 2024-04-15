@@ -28,30 +28,16 @@ markup:
       unsafe: true
 
 menus:
-  main-left:
+  main:
   - name: "Blog"
     pageRef: "/blog"
     weight: 5
-  #- name: "Events"
-  #  url: "/events/"
-  #  weight: 7
-  - name: "R// Garage"
-    url: "/garage/"
-    weight: 10
-  main-right:
   - name: "Newsletter"
     pageRef: "/newsletter"
     weight: 20
   - name: "Contact Us"
     pageRef: "/contact"
     weight: 25
-  garage:
-    - name: "Features"
-      url: "/garage/features"
-      weight: 10
-    - name: "Pricing"
-      url: "/garage/pricing/"
-      weight: 15
   blog:
     - name: "Latest Posts"
       pageRef: "/blog/"

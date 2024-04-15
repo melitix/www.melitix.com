@@ -1,3 +1,3 @@
 ---
-title: "The Revidian Moto Blog"
+title: "The Melitix Blog"
 ---

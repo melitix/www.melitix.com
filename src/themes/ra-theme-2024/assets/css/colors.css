@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------------------
+ * Colors
+ *---------------------------------------------------------------------------*/
+:root{
+	--melitix-green: #006241;
+	--main-black; #000000;
+	--almost-white: #F5F5F5;
+
+	--primary-color: var( --melitix-green );
+	--on-primary-color: white;
+	--secondary-color: var( --melitix-green );
+	--on-secondary-color: white;
+	--tertiary-color: var( --melitix-green );
+	--on-tertiary-color: white;
+
+	--background-color: var( --almost-white );
+}
