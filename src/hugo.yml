@@ -8,7 +8,7 @@ enableEmoji: true
 
 params:
   description: "A brand for motorcycle enthusiasts with a flair for tech and engineering."
-  tagline: "A brand for motorcycle enthusiasts with a flair for tech and engineering."
+  tagline: "A modern events platform coming soon"
   mailchimpURL: ""
   social:
     mastodon: "https://nanobyte.cafe/@RevidianMoto"

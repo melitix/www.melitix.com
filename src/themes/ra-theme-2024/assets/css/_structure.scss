@@ -25,8 +25,8 @@ $border-curve: 10px;
 		font-size: larger;
 
 		.site-logo{
-			padding-right: 25px;
-			height: 60%;
+			padding-right: 22px;
+			height: 50%;
 		}
 	}
 
@@ -150,13 +150,15 @@ $border-curve: 10px;
 main{
 	flex-grow: 1;
 	margin-top: 30px;
-	background-color: white;
 	padding: 50px 60px;
 
 	h1{
 		margin-top: 0;
 	}
 }
+	body.page main{
+		background-color: white;
+	}
 
 #TableOfContents{
 	width: auto;
