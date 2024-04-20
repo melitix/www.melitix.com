@@ -1,8 +1,17 @@
 {{- $currentPage := . -}}
 <header>
 	<nav id="main-nav">
-		<a class="site-title" href="/"><img class="site-logo" src="/melitix-icon.svg"> {{ .Site.Title }}</a>
+		<a class="site-title" href="/"><img class="site-logo" src="/melitix-icon--light.svg"> {{ .Site.Title }}</a>
 		{{ partial "menu.html" (dict "menuID" "main" "dir" "h" "page" .) }}
 	</nav>
+{{ if .Section }}
+	<nav id="section-nav" class="section-{{ .Section }}">
+		<a class="section-image" href="/{{ .Section }}/">
+			<h2 class="section-title">{{ .Section | title }}</h2>
+		</a>
+		{{ partial "menu.html" (dict "menuID" .Section "dir" "h" "page" .) }}
+	</ul>
+	</nav>
+{{ end }}
 	<a class="toggle" onclick="toggleMainNav();"><span class="fa fa-bars"></span></a>
 </header>

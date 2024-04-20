@@ -15,7 +15,7 @@ $border-curve: 10px;
 #main-nav{
 	display: flex;
 	justify-content: space-between;
-	background-color: var( --primary-color );
+	background-color: white;
 	padding: 0 10px;
 	height: 70px;
 	line-height: 70px;
@@ -43,13 +43,10 @@ $border-curve: 10px;
 #section-nav{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 10px auto 0;
-	border-radius: $border-curve;
-	background-color: #2b2c2d;
+	background-color: var( --primary-color );
 	padding-right: 10px;
-	width: 90%;
-	max-width: 1000px;
-	line-height: 60px;
+	height: 50px;
+	line-height: 50px;
 
 	.site-logo{
 		display: block;
