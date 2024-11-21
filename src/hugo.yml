@@ -1,0 +1,67 @@
+baseurl: "https://www.melitix.com/"
+title: "Melitix"
+theme: melitix-theme-2024
+
+googleAnalytics: "G-YDELWGZJQ7"
+
+enableEmoji: true
+summaryLength: 7
+
+params:
+  tagline: "Find or start local meet-ups"
+  description: "We're building a better, modern meet-up platform. Oh, and it's open-source!"
+  mailchimp:
+    url: "https://melitix.us22.list-manage.com/subscribe/post?u=fe896ef5a18ba018ca43aa978&amp;id=b9fbfc1654&amp;f_id=00b6d9e1f0"
+    tags: "27924"
+  social:
+    mastodon: "https://nanobyte.cafe/@Melitix"
+    facebook: "melitix"
+    linkedin: "Melitix"
+    github: "eventhunt-org"
+  author:
+    email: "hey@melitix.com"
+    name: "Ricardo N Feliciano"
+
+copyright: "© 2024 Melitix"
+jsonFeedLimit: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menus:
+  main:
+  - name: "Newsletter"
+    pageRef: "/newsletter"
+    weight: 10
+  - name: "Contact Us"
+    pageRef: "/contact"
+    weight: 15
+  social:
+  #- identifier: "mastodon"
+  #  url: "https://nanobyte.cafe/@Melitix"
+  #  pre: '<i class="fa-brands fa-mastodon"></i>'
+  #  params:
+  #    rel: me
+  #  weight: 5
+  - identifier: "bluesky"
+    url: "https://bsky.app/profile/melitix.bsky.social"
+    pre: '<i class="fa-brands fa-bluesky"></i>'
+    params:
+      rel: me
+    weight: 10
+  - identifier: "facebook"
+    url: "https://www.facebook.com/Melitix"
+    pre: '<i class="fa-brands fa-facebook"></i>'
+    params:
+      rel: me
+    weight: 15
+  - identifier: "linkedin"
+    url: "https://www.linkedin.com/company/melitix"
+    pre: '<i class="fa-brands fa-linkedin"></i>'
+    weight: 20
+  - identifier: "github"
+    url: "https://github.com/melitix"
+    pre: '<i class="fa-brands fa-github"></i>'
+    weight: 25

@@ -1,0 +1,78 @@
+html{
+	font-size: 62.5%;
+}
+
+body{
+	color: black;
+	line-height: 1.5;
+	font-family: "Jost", sans-serif;
+	font-size: 1.8rem;
+
+	a{
+      color: $link-color;
+      text-decoration: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin-bottom: 35px;;
+	color: var( --heading-color );
+	font-family: "Jost", sans-serif;
+	line-height: 100%;
+}
+
+h1{
+	text-align: center;
+	font-size: 4.0rem;
+}
+
+body > header{
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.site-title{
+	font-family: "Rubik Mono One", sans-serif;
+}
+
+body > header{
+
+	#main-nav{
+		font-size: 1.8rem;
+	}
+
+	ul.menu li.ancestor > a,
+	ul.menu li.active > a{
+		font-weight: 900;
+	}
+}
+
+
+main{
+	h2{
+		margin-bottom: 0;
+		font-size: 3.0rem;
+	}
+
+	.content a{
+		color: $tertiary-color;
+		font-weight: bold;
+	}
+
+	a.continue{
+		font-weight: bold;
+	}
+
+	a.comment{
+		font-weight: bold;
+	}
+}
+
+body > footer{
+	color: white;
+	font-size: 1.5rem;
+}

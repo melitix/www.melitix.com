@@ -1,0 +1,9 @@
+{{- $currentPage := . -}}
+<header>
+	<div class="site-brand">
+		<span class="outer-color"><span class="inner-color"></span></span>
+		<a class="site-title" href="/">{{ .Site.Title }}</a>
+	</div>
+	{{ partial "menu.html" (dict "menuID" "main" "dir" "h" "page" .) }}
+	<a class="toggle" onclick="toggleMainNav();"><i class="fa-solid fa-bars"></i></a>
+</header>

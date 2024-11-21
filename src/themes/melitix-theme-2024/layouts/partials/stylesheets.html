@@ -1,0 +1,14 @@
+{{- $style := resources.Get "vendor/sanitize-13.0/sanitize.css" | minify -}}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:wght@400;700&family=Pacifico&display=swap&family=Rubik+Mono+One">
+{{- $style := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{- $style := resources.Get "css/mobile.scss" | toCSS | minify | fingerprint -}}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="(max-width:1200px)">
+{{ with .Page.Params.css }}
+	{{ range . -}}
+		<link rel="stylesheet" href="{{ . }}" crossorigin="">
+	{{- end }}
+{{ end }}

@@ -1,0 +1,27 @@
+// Named colors
+$melitix-green: #006241;
+$eventhunt-blue: #74C0FC;
+
+// Color purpose
+$primary-color: $melitix-green;
+$on-primary-color: white;
+$secondary-color: #cb1a20;
+$tertiary-color: #27A0B6;
+$text-color: black;
+$link-color: black;
+$heading-color: #26253B;
+
+:root{
+	--eventhunt-blue:	#74C0FC;
+
+	--main-black:		#000000;
+	--almost-white:	#F5F5F5;
+	--almost-black:	#2B2C2D;
+	--secondary-color: var( --melitix-green );
+	--on-secondary-color: white;
+	--tertiary-color: var( --melitix-green );
+	--on-tertiary-color: white;
+
+	--background-color: #EDEEF0;
+	--heading-color: #26253B;
+  }

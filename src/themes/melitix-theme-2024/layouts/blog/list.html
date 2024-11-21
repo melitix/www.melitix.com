@@ -1,0 +1,25 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ if .Content }}<div class="content-body">{{ .Content }}</div>{{ end }}
+<div class="cards c1">
+{{ range (.Paginate (where .Site.RegularPages.ByDate.Reverse "Section" "blog")).Pages }}
+<a class="card" href="{{ .RelPermalink }}"><article id="{{ .File.UniqueID }}">
+	<header>
+		{{ $imgPath := "" }}
+		{{ with .Params.feature }}{{ $imgPath = (printf "img/feature/%s" .) }}{{ else }}{{ $imgPath = "img/feature/brand-design-1.jpg" }}{{ end }}
+		{{ $origImg := resources.Get $imgPath }}
+		{{ $midImg := $origImg.Resize "700x" }}
+		{{ $newImg := $midImg.Crop "700x300 Center" }}
+		<img class="feature" src="{{ $newImg.RelPermalink }}">
+	</header>
+	<footer>
+		<h2>{{ .Title }}</h2>
+		<p class="summary">{{ .Summary }}</p>
+		{{ $author := index $.Site.Data.authors .Params.author }}
+		<span class="meta"><time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time><img class="avatar" src="{{ $author.avatar }}">{{ $author.name }}</span>
+	</footer>
+</article></a>
+{{ end }}
+</div> <!-- .cards -->
+{{ partial "pager" . }}
+{{ end }}

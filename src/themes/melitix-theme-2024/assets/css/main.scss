@@ -1,0 +1,15 @@
+@import "colors";
+@import "fonts";
+@import "structure";
+@import "elements";
+@import "widgets";
+@import "classes";
+
+body.home{
+  @import "homepage";
+}
+
+// sections
+body.section-blog{
+  @import "section-blog";
+}

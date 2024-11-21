@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section id="intro">
+	<h1>{{ .Site.Params.tagline }}</h1>
+	<p>{{ .Site.Params.description }}</p>
+</section> <!-- #intro -->
+<section class="cards c1">
+	<div class="card eventhunt">
+		<footer>
+			<h2>
+				<span class="fa-layers fa-fw">
+					<i class="fa-solid fa-location-pin" data-fa-transform="grow-3"></i>
+					<i class="fa-solid fa-code" data-fa-transform="shrink-8 up-1"></i>
+				</span>
+				EventHunt
+			</h2>
+			<p>This is the name of the open-source project we're building to bring communities together with local events.</p>
+		</footer>
+	</div> <!-- .eventhunt -->
+	<div class="card learn">
+		<footer>
+			<h2>
+				<span class="fa-layers fa-fw">
+					<i class="fa-solid fa-laptop" data-fa-transform="grow-3"></i>
+					<i class="fa-solid fa-location-pin" data-fa-transform="shrink-8 up-1"></i>
+				</span>
+				Learn
+			</h2>
+			<p>We'll be publishing tips on our blog on the best ways to organize events. For attendees, we'll share tips on how to get the most value out of meet-ups you attend.</p>
+		</footer>
+	</div> <!-- .eventhunt -->
+</section>
+{{ end }}

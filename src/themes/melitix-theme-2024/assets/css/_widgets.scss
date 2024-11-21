@@ -1,0 +1,80 @@
+.cards{
+  display: flex;
+
+  &.c1{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .card{
+      width: 52%;
+      max-width: 700px;
+      min-width: 300px;
+    }
+  }
+}
+
+.card{
+	display: inline-block;
+	margin: 0 20px 30px 0;
+	border-radius: 10px;
+	background-color: white;
+    overflow: clip;
+
+	header{
+      img{
+        width: 100%;
+      }
+	}
+
+	footer{
+		padding: 2.2rem;
+	}
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h7{
+      margin: 0;
+    }
+}
+
+.menu a:hover{
+  color: $primary-color;
+}
+
+form.design-a{
+	margin: 0 auto;
+	width: 70%;
+
+	input,
+	select,
+	textarea{
+		display: block;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		padding: 8px 0;
+		width: 100%;
+	}
+
+	/* one-line rectangle inputs */
+	input,
+	select{
+		padding-left: 10px;
+		height: 40px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea{
+		border: none;
+
+		&:hover{
+			border: 1px solid #ABB0B2;
+		}
+	}
+}
+
